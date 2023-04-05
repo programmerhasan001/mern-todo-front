@@ -58,7 +58,7 @@ export default function Home() {
           {updateId ? "Update" : "Add"}
         </button>
       </div>
-      <div>
+      <div className='px-2'>
         {
           tasks.length === 0 && (
             <div className='text-center mt-5'>
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           )
         }
-        <table className="table table-secondary w-25 mx-auto mt-5">
+        <table className="table table-secondary mx-auto mt-5" style={{ maxWidth: "500px" }}>
           <thead>
             <tr>
               <th scope="col" className='text-uppercase'>Task Lists</th>
