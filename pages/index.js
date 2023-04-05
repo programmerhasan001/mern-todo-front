@@ -51,7 +51,7 @@ export default function Home() {
   }
   return (
     <div>
-      <h2 className='text-center mt-5 text-uppercase border-0 border-md'>To-do App</h2>
+      <h2 className='text-center mt-5 text-uppercase' style={{ fontFamily: 'cursive' }}>To-do App</h2>
       <div className='text-center mt-4'>
         <input style={{ outline: '0' }} className='me-2 border py-1' type='text' value={input} onChange={(e) => setInput(e.target.value)} />
         <button onClick={updateId ? updateTaskById : addTask} style={{ cursor: 'pointer' }} className='border py-1 px-3 text-uppercase fw-semibold'>
